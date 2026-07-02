@@ -1,0 +1,628 @@
+/* ===========================
+   ORNIQUE LUXURY THEME
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FAF8F5;
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ===========================
+        NAVIGATION
+=========================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    background:rgba(250,248,245,.96);
+
+    backdrop-filter:blur(20px);
+
+    z-index:999;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.05);
+
+}
+
+.navbar{
+
+    width:92%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo img{
+
+    height:70px;
+
+    width:auto;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.navbar ul li{
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.navbar ul li:hover{
+
+    color:#C8A15A;
+
+}
+
+.icons{
+
+    display:flex;
+
+    gap:20px;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.icons span:hover{
+
+    color:#C8A15A;
+
+}
+
+/* ===========================
+         HERO SECTION
+=========================== */
+
+.hero{
+
+    margin-top:110px;
+
+    width:92%;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:70px 0;
+
+}
+
+.hero-content h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:68px;
+
+    color:#202020;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    background:#C8A15A;
+
+    color:white;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    display:inline-block;
+
+}
+
+.btn:hover{
+
+    background:#202020;
+
+    transform:translateY(-4px);
+
+}
+
+.hero-image img{
+
+    border-radius:30px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+/* ===========================
+      FEATURED PRODUCTS
+=========================== */
+
+.featured{
+
+    width:92%;
+
+    margin:100px auto;
+
+}
+
+.featured h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    color:#202020;
+
+    margin-bottom:60px;
+
+}
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+    color:#202020;
+
+}
+
+.card p{
+
+    color:#777;
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+}
+
+.card h4{
+
+    color:#C8A15A;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+}
+
+.card button{
+
+    background:#202020;
+
+    color:#fff;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:35px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.card button:hover{
+
+    background:#C8A15A;
+
+}
+
+/* ===========================
+      WHY CHOOSE US
+=========================== */
+
+.why{
+
+    width:92%;
+
+    margin:120px auto;
+
+}
+
+.why h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:50px;
+
+    margin-bottom:60px;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.why-grid div{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.why-grid div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.why-grid h3{
+
+    color:#C8A15A;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.why-grid p{
+
+    color:#666;
+
+    line-height:1.8;
+
+  }
+/* ===========================
+      FOOTER
+=========================== */
+
+footer{
+
+    background:#202020;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    margin-top:100px;
+
+}
+
+footer h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:48px;
+
+    color:#C8A15A;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#d9d9d9;
+
+    font-size:16px;
+
+    margin:10px 0;
+
+    line-height:1.8;
+
+}
+
+footer a{
+
+    color:#C8A15A;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================
+      NEWSLETTER
+=========================== */
+
+.newsletter{
+
+    width:92%;
+
+    margin:120px auto;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.newsletter h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    color:#202020;
+
+    margin-bottom:20px;
+
+}
+
+.newsletter p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    font-size:17px;
+
+}
+
+.newsletter input{
+
+    width:320px;
+
+    max-width:90%;
+
+    padding:16px 20px;
+
+    border:
+      /* ===========================
+      LUXURY ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-content{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.hero-image{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.why-grid div{
+
+    animation:fadeUp .9s ease;
+
+}
+
+/* ===========================
+      PREMIUM HOVER
+=========================== */
+
+.card img{
+
+    transition:.45s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.logo img{
+
+    transition:.35s;
+
+}
+
+.logo img:hover{
+
+    transform:rotate(-3deg) scale(1.05);
+
+}
+
+button{
+
+    transition:.35s;
+
+  }
